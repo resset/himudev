@@ -20,6 +20,7 @@ board-hifive1 = []
 board-hifive1-revb = ["e310x-hal/g002"]
 board-lofive = []
 board-lofive-r1 = ["e310x-hal/g002"]
+board-himudev-v1 = ["e310x-hal/g002"]
 
 [package.metadata.docs.rs]
 features = ['board-hifive1-revb']

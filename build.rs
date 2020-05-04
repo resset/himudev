@@ -37,6 +37,10 @@ fn main() {
             fs::copy("memory-lofive-r1.x", out_dir.join("hifive1-memory.x")).unwrap();
             println!("cargo:rerun-if-changed=memory-lofive-r1.x");
         }
+        "himudev_v1" => {
+            fs::copy("memory-himudev-v1.x", out_dir.join("hifive1-memory.x")).unwrap();
+            println!("cargo:rerun-if-changed=memory-himudev-v1.x");
+        }
 
         other => panic!("Unknown board: {}", other),
     }

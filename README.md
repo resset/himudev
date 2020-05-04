@@ -4,7 +4,7 @@
 
 # `hifive1`
 
-> Board support crate for HiFive1 and LoFive boards
+> Board support crate for hIMUdev board, based on hifive1 crate.
 
 ## [Documentation](https://docs.rs/crate/hifive1)
 

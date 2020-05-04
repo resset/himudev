@@ -8,10 +8,18 @@ pub use e310x_hal as hal;
 pub mod clock;
 pub use clock::configure as configure_clocks;
 
-#[cfg(any(feature = "board-hifive1", feature = "board-hifive1-revb"))]
+#[cfg(any(
+    feature = "board-hifive1",
+    feature = "board-hifive1-revb",
+    feature = "board-himudev-v1"
+))]
 pub mod led;
-#[cfg(any(feature = "board-hifive1", feature = "board-hifive1-revb"))]
-pub use led::{RED, GREEN, BLUE, rgb, Led};
+#[cfg(any(
+    feature = "board-hifive1",
+    feature = "board-hifive1-revb",
+    feature = "board-himudev-v1"
+))]
+pub use led::{rgb, Led, BLUE, GREEN, RED};
 
 pub mod stdout;
 pub use stdout::configure as configure_stdout;
