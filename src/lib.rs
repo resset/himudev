@@ -19,7 +19,7 @@ pub mod led;
     feature = "board-hifive1-revb",
     feature = "board-himudev-v1"
 ))]
-pub use led::{rgb, Led, BLUE, GREEN, RED};
+pub use led::{rgb, all, Led, BLUE, GREEN, RED};
 
 pub mod stdout;
 pub use stdout::configure as configure_stdout;

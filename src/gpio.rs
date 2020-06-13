@@ -55,9 +55,10 @@ macro_rules! pin {
     ($gpio:ident, dig18) => { $gpio.pin12 };
     ($gpio:ident, dig19) => { $gpio.pin13 };
     // onboard LEDs
-    ($gpio:ident, led_red) => { $gpio.pin22 };
+    ($gpio:ident, led_red) => { $gpio.pin20 };
     ($gpio:ident, led_green) => { $gpio.pin19 };
     ($gpio:ident, led_blue) => { $gpio.pin21 };
+    ($gpio:ident, led_yellow) => { $gpio.pin22 };
 
 }
 
